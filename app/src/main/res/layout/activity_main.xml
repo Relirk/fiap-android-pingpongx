@@ -11,10 +11,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
-        android:text="PingPongX"
+        android:background="@drawable/textlines"
+        android:text="Match PingPongX"
+        android:textAlignment="textStart"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,18 +29,19 @@
         android:layout_marginTop="16dp"
         android:text="Casa"
         android:textAlignment="center"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/tvPlayerOneScore"
         app:layout_constraintStart_toStartOf="@+id/tvPlayerOneScore"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerOneScore" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="120dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="x"
         android:textAlignment="center"
-        android:textSize="72sp"
+        android:textSize="80sp"
         app:layout_constraintEnd_toStartOf="@+id/tvPlayerTwoScore"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvPlayerOneScore"
@@ -48,6 +53,7 @@
         android:layout_height="wrap_content"
         android:text="Visitante"
         android:textAlignment="center"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayerOneName"
         app:layout_constraintEnd_toEndOf="@+id/tvPlayerTwoScore"
         app:layout_constraintStart_toStartOf="@+id/tvPlayerTwoScore"
@@ -55,10 +61,12 @@
 
     <TextView
         android:id="@+id/tvPlayerOneScore"
-        android:layout_width="120dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:background="#E31946"
         android:text="0"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="72sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
@@ -68,20 +76,24 @@
 
     <Button
         android:id="@+id/btPlayerOneScore"
-        android:layout_width="120sp"
+        android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:background="#1A1653"
         android:text="Ponto"
+        android:textColor="#E6FF43"
         app:layout_constraintEnd_toEndOf="@+id/tvPlayerOneName"
         app:layout_constraintStart_toStartOf="@+id/tvPlayerOneName"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerOneName" />
 
     <Button
         android:id="@+id/btPlayerTwoScore"
-        android:layout_width="120sp"
+        android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:background="#1A1653"
         android:text="Ponto"
+        android:textColor="#E6FF43"
         app:layout_constraintEnd_toEndOf="@+id/tvPlayerTwoName"
         app:layout_constraintStart_toStartOf="@+id/tvPlayerTwoName"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerTwoName" />
@@ -90,30 +102,36 @@
         android:id="@+id/btFinishMatch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Terminar partida"
+        android:layout_marginTop="236dp"
+        android:background="#E6FF43"
+        android:text="Finish Match"
+        android:textColor="#140D42"
         app:layout_constraintEnd_toEndOf="@+id/tvPlayerTwoScore"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvPlayerOneScore"
-        app:layout_constraintTop_toBottomOf="@+id/btPlayerOneScore" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
         android:id="@+id/btRevenge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Revanche"
+        android:background="#5AF8DE"
+        android:text="Revange"
+        android:textColor="#140D42"
         app:layout_constraintEnd_toEndOf="@+id/btFinishMatch"
         app:layout_constraintStart_toStartOf="@+id/btFinishMatch"
         app:layout_constraintTop_toBottomOf="@+id/btFinishMatch" />
 
     <TextView
         android:id="@+id/tvPlayerTwoScore"
-        android:layout_width="120dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:background="#66F7E4"
         android:text="0"
         android:textAlignment="center"
-        android:textSize="72sp"
+        android:textColor="#FFFFFF"
+        android:textSize="75sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
